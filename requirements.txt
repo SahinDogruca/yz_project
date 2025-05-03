@@ -1,4 +1,7 @@
 numpy
 pandas
-tensorflow
-scipy
+tensorflow>=2.19.0
+scipy>=1.15.2
+scikit-learn
+matplotlib
+keras-tuner

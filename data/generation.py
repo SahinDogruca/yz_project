@@ -55,7 +55,7 @@ def generate_C(num=1000):
     for i in range(len(points)):
       matrix[points[i][0]][points[i][1]] = 1
 
-    max_euclidian = 1000
+    max_euclidian = 0
     points.sort(key=lambda x: x[0])
     for i in range(len(points)):
       for j in range(i+1, len(points)):
