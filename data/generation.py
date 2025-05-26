@@ -7,6 +7,7 @@ def generate_A(num=1000):
     y = []
     for _ in range(num):
         matrix = np.zeros((25, 25), dtype="i1")
+        # create a random points x, y
         points = [
             (np.random.randint(0, 24), np.random.randint(0, 24)) for _ in range(2)
         ]
@@ -14,6 +15,7 @@ def generate_A(num=1000):
             points = [
                 (np.random.randint(0, 24), np.random.randint(0, 24)) for _ in range(2)
             ]
+        # set this point 1 on matrix
         for i in range(len(points)):
             matrix[points[i][0]][points[i][1]] = 1
 
